@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF2282D8DF18DBE7838FADFC /* Pods_PayPalTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952CA7BFAD36DA210DDA2218 /* Pods_PayPalTest.framework */; };
+		FA3EBF002267B79B0021DEF3 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3EBEFF2267B79B0021DEF3 /* NSString+Base64.m */; };
 		FAC7ADDA226645D600960666 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC7ADD9226645D600960666 /* AppDelegate.m */; };
 		FAC7ADDD226645D600960666 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC7ADDC226645D600960666 /* ViewController.m */; };
 		FAC7ADE0226645D600960666 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC7ADDE226645D600960666 /* Main.storyboard */; };
 		FAC7ADE2226645D900960666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC7ADE1226645D900960666 /* Assets.xcassets */; };
 		FAC7ADE5226645D900960666 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC7ADE3226645D900960666 /* LaunchScreen.storyboard */; };
 		FAC7ADE8226645D900960666 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC7ADE7226645D900960666 /* main.m */; };
+		FAECB4312267715D00BB82C3 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = FAECB4302267715D00BB82C3 /* Network.m */; };
+		FAECB435226773D200BB82C3 /* ThreadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAECB434226773D100BB82C3 /* ThreadManager.m */; };
+		FAECB43B22677CBD00BB82C3 /* PayPalAuthRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAECB43A22677CBD00BB82C3 /* PayPalAuthRequest.m */; };
+		FAECB43E226783DE00BB82C3 /* RESTMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = FAECB43D226783DE00BB82C3 /* RESTMethod.m */; };
+		FAECB4422267885E00BB82C3 /* PayPalAuthToken.m in Sources */ = {isa = PBXBuildFile; fileRef = FAECB4412267885E00BB82C3 /* PayPalAuthToken.m */; };
+		FAECB44622678CCC00BB82C3 /* CreateOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = FAECB44522678CCC00BB82C3 /* CreateOrder.m */; };
+		FAECB44C2267958100BB82C3 /* OrderCreationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FAECB44B2267958100BB82C3 /* OrderCreationResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03BC59DB57CBCF3D1D8B2DB9 /* Pods-PayPalTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayPalTest.debug.xcconfig"; path = "Target Support Files/Pods-PayPalTest/Pods-PayPalTest.debug.xcconfig"; sourceTree = "<group>"; };
+		7CD5CA605142FEDB0114B8F2 /* Pods-PayPalTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayPalTest.release.xcconfig"; path = "Target Support Files/Pods-PayPalTest/Pods-PayPalTest.release.xcconfig"; sourceTree = "<group>"; };
+		952CA7BFAD36DA210DDA2218 /* Pods_PayPalTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayPalTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3EBEFE2267B79B0021DEF3 /* NSString+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		FA3EBEFF2267B79B0021DEF3 /* NSString+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 		FAC7ADD5226645D600960666 /* PayPalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayPalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC7ADD8226645D600960666 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAC7ADD9226645D600960666 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +40,23 @@
 		FAC7ADE4226645D900960666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC7ADE6226645D900960666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC7ADE7226645D900960666 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAECB42D22676ED700BB82C3 /* RESTRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESTRequest.h; sourceTree = "<group>"; };
+		FAECB42E22676FD600BB82C3 /* HTTPMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPMethod.h; sourceTree = "<group>"; };
+		FAECB42F2267715D00BB82C3 /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		FAECB4302267715D00BB82C3 /* Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		FAECB433226773D100BB82C3 /* ThreadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadManager.h; sourceTree = "<group>"; };
+		FAECB434226773D100BB82C3 /* ThreadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadManager.m; sourceTree = "<group>"; };
+		FAECB43922677CBD00BB82C3 /* PayPalAuthRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayPalAuthRequest.h; sourceTree = "<group>"; };
+		FAECB43A22677CBD00BB82C3 /* PayPalAuthRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayPalAuthRequest.m; sourceTree = "<group>"; };
+		FAECB43C226783DE00BB82C3 /* RESTMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESTMethod.h; sourceTree = "<group>"; };
+		FAECB43D226783DE00BB82C3 /* RESTMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESTMethod.m; sourceTree = "<group>"; };
+		FAECB4402267885E00BB82C3 /* PayPalAuthToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayPalAuthToken.h; sourceTree = "<group>"; };
+		FAECB4412267885E00BB82C3 /* PayPalAuthToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayPalAuthToken.m; sourceTree = "<group>"; };
+		FAECB44422678CCC00BB82C3 /* CreateOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateOrder.h; sourceTree = "<group>"; };
+		FAECB44522678CCC00BB82C3 /* CreateOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateOrder.m; sourceTree = "<group>"; };
+		FAECB44A2267958100BB82C3 /* OrderCreationResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderCreationResponse.h; sourceTree = "<group>"; };
+		FAECB44B2267958100BB82C3 /* OrderCreationResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderCreationResponse.m; sourceTree = "<group>"; };
+		FAECB44D226798D200BB82C3 /* Serializable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Serializable.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +64,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2282D8DF18DBE7838FADFC /* Pods_PayPalTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57BC8BCFC4D8F0245BCD76E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03BC59DB57CBCF3D1D8B2DB9 /* Pods-PayPalTest.debug.xcconfig */,
+				7CD5CA605142FEDB0114B8F2 /* Pods-PayPalTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		98FB2D1FCED6615C28B59CBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				952CA7BFAD36DA210DDA2218 /* Pods_PayPalTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA3EBEFD2267B7560021DEF3 /* NSStringCategory */ = {
+			isa = PBXGroup;
+			children = (
+				FA3EBEFE2267B79B0021DEF3 /* NSString+Base64.h */,
+				FA3EBEFF2267B79B0021DEF3 /* NSString+Base64.m */,
+			);
+			path = NSStringCategory;
+			sourceTree = "<group>";
+		};
 		FAC7ADCC226645D600960666 = {
 			isa = PBXGroup;
 			children = (
 				FAC7ADD7226645D600960666 /* PayPalTest */,
 				FAC7ADD6226645D600960666 /* Products */,
+				57BC8BCFC4D8F0245BCD76E7 /* Pods */,
+				98FB2D1FCED6615C28B59CBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +118,10 @@
 		FAC7ADD7226645D600960666 /* PayPalTest */ = {
 			isa = PBXGroup;
 			children = (
+				FA3EBEFD2267B7560021DEF3 /* NSStringCategory */,
+				FAECB432226773D100BB82C3 /* ThreadUtils */,
+				FAECB42322676E9C00BB82C3 /* NetworkObjC */,
+				FAECB41722676D1900BB82C3 /* PayPalEngine */,
 				FAC7ADD8226645D600960666 /* AppDelegate.h */,
 				FAC7ADD9226645D600960666 /* AppDelegate.m */,
 				FAC7ADDB226645D600960666 /* ViewController.h */,
@@ -71,6 +135,108 @@
 			path = PayPalTest;
 			sourceTree = "<group>";
 		};
+		FAECB41722676D1900BB82C3 /* PayPalEngine */ = {
+			isa = PBXGroup;
+			children = (
+				FAECB43F2267883A00BB82C3 /* Models */,
+				FAECB43822677C5E00BB82C3 /* Endpoints */,
+			);
+			path = PayPalEngine;
+			sourceTree = "<group>";
+		};
+		FAECB42322676E9C00BB82C3 /* NetworkObjC */ = {
+			isa = PBXGroup;
+			children = (
+				FAECB43722677C4800BB82C3 /* Headers */,
+				FAECB43622677C3500BB82C3 /* Network */,
+			);
+			path = NetworkObjC;
+			sourceTree = "<group>";
+		};
+		FAECB432226773D100BB82C3 /* ThreadUtils */ = {
+			isa = PBXGroup;
+			children = (
+				FAECB433226773D100BB82C3 /* ThreadManager.h */,
+				FAECB434226773D100BB82C3 /* ThreadManager.m */,
+			);
+			path = ThreadUtils;
+			sourceTree = "<group>";
+		};
+		FAECB43622677C3500BB82C3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FAECB42F2267715D00BB82C3 /* Network.h */,
+				FAECB4302267715D00BB82C3 /* Network.m */,
+				FAECB43C226783DE00BB82C3 /* RESTMethod.h */,
+				FAECB43D226783DE00BB82C3 /* RESTMethod.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FAECB43722677C4800BB82C3 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				FAECB42D22676ED700BB82C3 /* RESTRequest.h */,
+				FAECB42E22676FD600BB82C3 /* HTTPMethod.h */,
+				FAECB44D226798D200BB82C3 /* Serializable.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		FAECB43822677C5E00BB82C3 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				FAECB44322678CB900BB82C3 /* Auth */,
+				FAECB447226794FD00BB82C3 /* CreateOrder */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		FAECB43F2267883A00BB82C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAECB4492267955D00BB82C3 /* OrderCreationResponse */,
+				FAECB4482267954B00BB82C3 /* PayPalAuthToken */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAECB44322678CB900BB82C3 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FAECB43922677CBD00BB82C3 /* PayPalAuthRequest.h */,
+				FAECB43A22677CBD00BB82C3 /* PayPalAuthRequest.m */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FAECB447226794FD00BB82C3 /* CreateOrder */ = {
+			isa = PBXGroup;
+			children = (
+				FAECB44422678CCC00BB82C3 /* CreateOrder.h */,
+				FAECB44522678CCC00BB82C3 /* CreateOrder.m */,
+			);
+			path = CreateOrder;
+			sourceTree = "<group>";
+		};
+		FAECB4482267954B00BB82C3 /* PayPalAuthToken */ = {
+			isa = PBXGroup;
+			children = (
+				FAECB4402267885E00BB82C3 /* PayPalAuthToken.h */,
+				FAECB4412267885E00BB82C3 /* PayPalAuthToken.m */,
+			);
+			path = PayPalAuthToken;
+			sourceTree = "<group>";
+		};
+		FAECB4492267955D00BB82C3 /* OrderCreationResponse */ = {
+			isa = PBXGroup;
+			children = (
+				FAECB44A2267958100BB82C3 /* OrderCreationResponse.h */,
+				FAECB44B2267958100BB82C3 /* OrderCreationResponse.m */,
+			);
+			path = OrderCreationResponse;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +244,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAC7ADEB226645D900960666 /* Build configuration list for PBXNativeTarget "PayPalTest" */;
 			buildPhases = (
+				9A76AED6B195E8EA9D0C508E /* [CP] Check Pods Manifest.lock */,
 				FAC7ADD1226645D600960666 /* Sources */,
 				FAC7ADD2226645D600960666 /* Frameworks */,
 				FAC7ADD3226645D600960666 /* Resources */,
+				4AFD58AD84C3D4C317AA33F0 /* [CP] Embed Pods Frameworks */,
+				7C032DBA44B12D72A6CAA6C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,13 +305,170 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4AFD58AD84C3D4C317AA33F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayPalTest/Pods-PayPalTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/syr.core/syr_core.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/syr_core.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayPalTest/Pods-PayPalTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C032DBA44B12D72A6CAA6C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayPalTest/Pods-PayPalTest-resources.sh",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout.bundle/checkoutJSIntegration.js",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout.bundle/nativexo-manifest.json",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout.bundle/syrBundle.html",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout.bundle/assets",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/address_blue_border.imageset/address_blue_border.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/checkout_logo_large.imageset/checkout_logo_large.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/genericbank.imageset/genericbank.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/icon_add_grey.imageset/icon_add_grey.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/icon_checkbox_checked_blue.imageset/icon_checkbox_checked_blue.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/icon_checkbox_default_grey.imageset/icon_checkbox_default_grey.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/icon_chevron_backward_blue.imageset/icon_chevron_backward_blue.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/icon_chevron_forward_blue.imageset/icon_chevron_forward_blue.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/icon_close_cross_white.imageset/icon_close_cross_white.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/icon_external_link_blue.imageset/icon_external_link_blue.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/icon_footerlock_grey.imageset/icon_footerlock_grey.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/icon_handshake_black.imageset/icon_handshake_black.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/icon_lock_white.imageset/icon_lock_white.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/icon_profile_phantom_black.imageset/icon_profile_phantom_black.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/icon_profile_phantom_small_white.imageset/icon_profile_phantom_small_white.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/img_fi_amex_small.imageset/img_fi_amex_small.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/img_fi_bankofamerica_small.imageset/img_fi_bankofamerica_small.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/img_fi_capitalone_small.imageset/img_fi_capitalone_small.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/img_fi_chase_small.imageset/img_fi_chase_small.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/img_fi_citibank_small.imageset/img_fi_citibank_small.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/img_fi_discover_small.imageset/img_fi_discover_small.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/img_fi_fifth_third_small.imageset/img_fi_fifth_third_small.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/img_fi_huntington_small.imageset/img_fi_huntington_small.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/img_fi_mastercard_small.imageset/img_fi_mastercard_small.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/img_fi_pnc_small.imageset/img_fi_pnc_small.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/img_fi_ppbalance_small.imageset/img_fi_ppbalance_small.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/img_fi_regions_small.imageset/img_fi_regions_small.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/img_fi_suntrust_small.imageset/img_fi_suntrust_small.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/img_fi_td_ameritrade_small.imageset/img_fi_td_ameritrade_small.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/img_fi_usaa_small.imageset/img_fi_usaa_small.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/img_fi_usbank_small.imageset/img_fi_usbank_small.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/img_fi_visa_small.imageset/img_fi_visa_small.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/img_fi_wells_fargo_small.imageset/img_fi_wells_fargo_small.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/pp_logo_blue.imageset/pp_logo_blue.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/small_rectangle_fi.imageset/small_rectangle_fi.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/spinner_circular_border.imageset/spinner_circular_border.png",
+				"${PODS_ROOT}/PayPal.Checkout/pod/assets/PYPLCheckout/wallet_blue_border.imageset/wallet_blue_border.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/checkoutJSIntegration.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/nativexo-manifest.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/syrBundle.html",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/assets",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/address_blue_border.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/checkout_logo_large.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/genericbank.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_add_grey.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_checkbox_checked_blue.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_checkbox_default_grey.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_chevron_backward_blue.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_chevron_forward_blue.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_close_cross_white.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_external_link_blue.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_footerlock_grey.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_handshake_black.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_lock_white.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_profile_phantom_black.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_profile_phantom_small_white.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/img_fi_amex_small.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/img_fi_bankofamerica_small.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/img_fi_capitalone_small.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/img_fi_chase_small.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/img_fi_citibank_small.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/img_fi_discover_small.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/img_fi_fifth_third_small.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/img_fi_huntington_small.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/img_fi_mastercard_small.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/img_fi_pnc_small.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/img_fi_ppbalance_small.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/img_fi_regions_small.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/img_fi_suntrust_small.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/img_fi_td_ameritrade_small.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/img_fi_usaa_small.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/img_fi_usbank_small.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/img_fi_visa_small.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/img_fi_wells_fargo_small.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/pp_logo_blue.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/small_rectangle_fi.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/spinner_circular_border.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wallet_blue_border.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayPalTest/Pods-PayPalTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A76AED6B195E8EA9D0C508E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PayPalTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAC7ADD1226645D600960666 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAECB435226773D200BB82C3 /* ThreadManager.m in Sources */,
 				FAC7ADDD226645D600960666 /* ViewController.m in Sources */,
+				FAECB44C2267958100BB82C3 /* OrderCreationResponse.m in Sources */,
 				FAC7ADE8226645D900960666 /* main.m in Sources */,
+				FAECB4312267715D00BB82C3 /* Network.m in Sources */,
+				FAECB44622678CCC00BB82C3 /* CreateOrder.m in Sources */,
+				FA3EBF002267B79B0021DEF3 /* NSString+Base64.m in Sources */,
+				FAECB43E226783DE00BB82C3 /* RESTMethod.m in Sources */,
+				FAECB43B22677CBD00BB82C3 /* PayPalAuthRequest.m in Sources */,
+				FAECB4422267885E00BB82C3 /* PayPalAuthToken.m in Sources */,
 				FAC7ADDA226645D600960666 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +609,7 @@
 		};
 		FAC7ADEC226645D900960666 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03BC59DB57CBCF3D1D8B2DB9 /* Pods-PayPalTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +627,7 @@
 		};
 		FAC7ADED226645D900960666 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CD5CA605142FEDB0114B8F2 /* Pods-PayPalTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

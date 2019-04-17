@@ -1,0 +1,6 @@
+framework module syr_core {
+  umbrella header "syr.core-umbrella.h"
+
+  export *
+  module * { export * }
+}

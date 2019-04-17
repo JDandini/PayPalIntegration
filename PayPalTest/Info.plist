@@ -41,5 +41,32 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb346544105527376</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.gaia.gaiaiOS</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>gaia</string>
+			</array>
+		</dict>
+	</array>
+	<key>Paypal_Deep_Link</key>
+	<string>gaia://paypal/authorize</string>
+	<key>Paypal_Client_Id</key>
+	<string>AeIlGeEW-ffrVvkpu1KGoD_-5BhgbHkPTRSo2pp3hThkVbzi3WHudT8mBnVKjqKVslfl2yrfwH0--Jo0</string>
+	<key>Paypal_Universal_Link</key>
+	<string>https://gaiadesign.com.mx</string>
+	<key>Paypal_Url_Scheme</key>
+	<string>gaia://paypal/authorize</string>
 </dict>
 </plist>

@@ -1,0 +1,20 @@
+PODS:
+  - PayPal.Checkout (3.4.5):
+    - syr.core (> 1)
+  - syr.core (1.7.2)
+
+DEPENDENCIES:
+  - PayPal.Checkout
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PayPal.Checkout
+    - syr.core
+
+SPEC CHECKSUMS:
+  PayPal.Checkout: 3e9205b023edb880cef71409bb5fc28b2e0f36b2
+  syr.core: b9a4c221abbe70276838edbbef490403fbd07d5d
+
+PODFILE CHECKSUM: 02d70608af4a987a55cf1951fba38a684c509bcd
+
+COCOAPODS: 1.6.1
