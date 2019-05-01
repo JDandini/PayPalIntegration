@@ -15,8 +15,9 @@
 #import "OrderCreationResponse.h"
 #import <WebKit/WebKit.h>
 #import <NativeCheckout/PYPLCheckout.h>
+#import <SafariServices/SafariServices.h>
 
-@interface ViewController () <WKNavigationDelegate>
+@interface ViewController () < SFSafariViewControllerDelegate, WKNavigationDelegate>
 @property (nonatomic, weak) IBOutlet WKWebView *webView;
 @property (nonatomic) OrderCreationResponse *currentPayPalOrder;
 
@@ -71,30 +72,42 @@
 
 -(void) loadWebViewWithURL: (NSString *)urlString {
     NSURL *url = [NSURL URLWithString:urlString];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    PYPLCheckout *checkout = [PYPLCheckout sharedInstance];
-    [checkout interceptWebView: webView withDelegate: self];
+    if (url == nil) { return; }
+    [self.view bringSubviewToFront:webView];
+    NSURLRequest *request =  [NSURLRequest requestWithURL:url];
+    webView.navigationDelegate = self;
     [webView loadRequest:request];
+
+
 }
 
 -(IBAction)startCheckoutWithPayPal:(UIButton *)sender {
     [self paypalAuthentication];
 }
 
+- (void)safariViewControllerDidFinish:(SFSafariViewController *)controller {
+    [controller dismissViewControllerAnimated:YES completion:nil];
+}
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
-    PYPLCheckout* checkout = [PYPLCheckout sharedInstance];
-    BOOL didPayPalHandleNavigation = [checkout webView:webView decidePolicyForNavigationAction:navigationAction decisionHandler:decisionHandler];
-    if(didPayPalHandleNavigation) {
-        decisionHandler(WKNavigationActionPolicyCancel);
-    } else {
-        decisionHandler(WKNavigationActionPolicyAllow);
+    NSString *url = navigationAction.request.URL.absoluteString;
+    WKNavigationActionPolicy shouldNavigate = [url containsString:@"gaiadesign.com.mx"] ? WKNavigationActionPolicyCancel: WKNavigationActionPolicyAllow;
+    if ([url containsString:@"gaiadesign.com.mx"]) {
+        NSURL *url = navigationAction.request.URL;
+        NSURLComponents *components = [NSURLComponents componentsWithString:url.absoluteString];
+        NSArray *queryItems = [components queryItems];
+        NSLog(@"%@",queryItems);
     }
+    decisionHandler(shouldNavigate);
 }
 
--(void) PayPalCheckoutCompleted: (NSDictionary*) details {
-    NSLog(@"Completed Checkout");
-}
--(void) PayPalCheckoutCancelled {
-    NSLog(@"Cancelaste");
+
+- (NSString *)valueForKey:(NSString *)key
+           fromQueryItems:(NSArray *)queryItems
+{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name=%@", key];
+    NSURLQueryItem *queryItem = [[queryItems
+                                  filteredArrayUsingPredicate:predicate]
+                                 firstObject];
+    return queryItem.value;
 }
 @end
